@@ -21,7 +21,7 @@ generateBillBtn.addEventListener('click', () => {
 
   const totalBill = billAmount + tipAmount
 
-  const eachPersonBill = totalBill / numberOfPeople
+  const eachPersonBill = Math.round((totalBill / numberOfPeople) * 10) / 10
 
   tipAmountOutput.innerText = `₹ ${tipAmount}`
 
